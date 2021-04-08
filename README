@@ -1,0 +1,13 @@
+This is the root directory of RhinoPiping sources:
+   - RhinoPiping and AdditionalAttributes plugins,
+   - license server.
+
+Linux makefiles are in ./make directory.  In order to build under
+linux (for the license server or some tests), first deploy makefiles
+by running ./make/deploy_makefiles.sh.  Target package paths must be
+passed as arguments to this command.
+
+For example, to deploy makefiles for the license server, run:
+
+    ./make/deploy_makefiles.sh RhinoPiping/com/server
+
